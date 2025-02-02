@@ -1,0 +1,21 @@
+import requests
+import json
+
+url = "https://fr24api.flightradar24.com/api/sandbox/flight-tracks"
+headers = {
+  'Accept': 'application/json',
+  'Accept-Version': 'v1',
+  'Authorization':'Bearer 9e070b07-8fad-4cff-9772-e08ee4720101|dhJ0cTV1SBMAzgyx1T5qbGg3dHIlmiFRqF8bmy4E26f92624'
+}
+
+try:
+  response = requests.get(url, headers=headers)
+  response.raise_for_status()
+  data = response.json()
+  print(json.dumps(data, indent=4))
+except requests.exceptions.HTTPError as http_err:
+  print(f"HTTP error occurred: {http_err}")
+except Exception as err:
+    print(f"An error occurred: {err}")
+
+
