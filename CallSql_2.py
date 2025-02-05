@@ -5,42 +5,37 @@ import pyodbc
 import requests
 from datetime import datetime
 
-# 로깅 설정
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("autosave.log"),
-        logging.StreamHandler()
-    ]
-)
+API_TOKEN = '9e09878e-71fc-41bd-b41f-2bf99149679c|DmVwjwtjTEq5rS2MPKJ0Y1XmtL7TyhqhDyIR9bSra1f7c38f'
+BASE_URL = 'https://fr24api.flightradar24.com/api'
+ENDPOINT = '/live/flight-positions/light'
 
-def fetch_flight_data():
-    """
-    비행기 데이터 API를 호출하여 데이터를 가져오는 함수.
-    API URL과 토큰은 실제 API 엔드포인트 및 인증 방식에 맞게 변경하세요.
-    """
-    API_URL = 'https://127.0.0.1:1433'  # 실제 API URL로 변경
-    API_TOKEN = '9e09878e-71fc-41bd-b41f-2bf99149679c|DmVwjwtjTEq5rS2MPKJ0Y1XmtL7TyhqhDyIR9bSra1f7c38f'
+# Construct the full URL
+url = f"{BASE_URL}{ENDPOINT}"
 
-    if not API_TOKEN:
-        logging.error("API 토큰이 설정되지 않았습니다.")
-        print("API 토큰이 설정되지 않았습니다.")
-        return None
+# Define the headers, including the Authorization header with your API token
+headers = {
+    'Accept': 'application/json',
+    'Authorization': f'Bearer {API_TOKEN}',
+    'Accept-Version': 'v1'
+}
 
-    headers = {
-        'Authorization': f'Bearer {API_TOKEN}',
-        'Content-Type': 'application/json'
-    }
+# Define any query parameters, if needed (optional)
+params = {
+    'bounds': '50.682,46.218,14.422,22.243'  # Slovenia IntAirport coordinates
+}
 
-    try:
-        response = requests.get(API_URL, headers=headers)
-        response.raise_for_status()  # HTTP 에러 발생 시 예외 발생
-        logging.info("API 호출 성공.")
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        logging.error(f"API 호출 오류: {e}")
-        return None
+# Make the GET request to the API
+response = requests.get(url, headers=headers, params=params)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Parse and print the JSON response
+    data = response.json()
+    print("Live Flight Positions:")
+    print(data)
+else:
+    print(f"Error: {response.status_code}")
+    print(response.text)
 
 def store_flight_data(conn, data):
     """
@@ -52,11 +47,18 @@ def store_flight_data(conn, data):
         print("저장할 데이터가 없습니다.")
         return
 
+    flights = data.get('flights', [])  # flights 변수 정의
+
+    if not flights:
+        logging.info("저장할 비행기 데이터가 없습니다.")
+        print("저장할 비행기 데이터가 없습니다.")
+        return
+
     try:
         cursor = conn.cursor()
-        for flight in data.get('data', []):
+        for flight in flights:    # API 응답 구조에 맞게 변경
             cursor.execute("""
-                INSERT INTO flights (
+                INSERT INTO Flights (
                     fr24_id, hex, callsign, lat, lon, track, alt, gspeed, vspeed, squawk, timestamp, source
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, 
@@ -76,6 +78,7 @@ def store_flight_data(conn, data):
             logging.debug(f"삽입된 데이터: {flight}")
         conn.commit()
         logging.info("데이터베이스에 데이터 삽입 완료.")
+        logging.info(f"{len(flights)}개의 비행기 데이터가 저장되었습니다.")
         print("데이터가 성공적으로 저장되었습니다.")
     except pyodbc.Error as e:
         logging.error(f"MSSQL 데이터 삽입 오류: {e}")
@@ -92,9 +95,12 @@ def main():
         return
 
     # 환경 변수에서 데이터베이스 사용자명 및 다른 정보 가져오기
-    DB_SERVER = os.getenv('DB_SERVER', 'localhost')  # 기본값: localhost
-    DB_NAME = os.getenv('DB_NAME', 'your_database')  # 실제 데이터베이스 이름으로 변경
-    DB_USER = os.getenv('DB_USER', 'your_user')      # 실제 데이터베이스 사용자 이름으로 변경
+    DB_SERVER = os.getenv('DB_SERVER', 'localhost,1433')   # 기본값: localhost,1433
+    DB_NAME = os.getenv('DB_NAME', 'TestDB')           # 실제 데이터베이스 이름으로 변경
+    DB_USER = os.getenv('DB_USER', 'SA')                   # 실제 데이터베이스 사용자 이름으로 변경
+
+    # 환경 변수 출력 (디버깅용, 보안상 주의 필요)
+    logging.debug(f"DB_SERVER: {DB_SERVER}, DB_NAME: {DB_NAME}, DB_USER: {DB_USER}")
 
     # 데이터베이스 연결 설정
     try:
@@ -116,7 +122,7 @@ def main():
         while True:
             data = fetch_flight_data()
             if data:
-                flights = data.get('flights', [])
+                flights = data.get('flights', [])        # API 응답 구조에 맞게 변경
                 if not flights:
                     logging.info("비행기 데이터가 없습니다.")
                     print("비행기 데이터가 없습니다.")
@@ -125,7 +131,7 @@ def main():
             else:
                 logging.info("API 응답이 없습니다.")
                 print("API 응답이 없습니다.")
-            
+
             print("15초 대기 중...")
             time.sleep(15)  # 15초 대기
     except KeyboardInterrupt:
