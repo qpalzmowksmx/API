@@ -1,0 +1,182 @@
+2025-02-03 18:12:23,284 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 18:12:23,285 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 18:12:23,420 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 18:12:23,420 - ERROR - API 관련 환경 변수가 설정되지 않았습니다.
+2025-02-03 18:12:23,420 - INFO - API 응답이 없습니다.
+2025-02-03 18:12:27,638 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 18:12:27,650 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 18:14:31,561 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 18:14:31,562 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 18:14:31,699 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 18:14:31,702 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 18:14:32,667 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 18:14:32,668 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 18:14:32,668 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 18:14:47,670 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 18:14:48,653 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 18:14:48,654 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 18:14:48,654 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 18:15:03,656 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 18:15:04,618 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 18:15:04,631 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 18:19:23,137 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 18:19:23,137 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 18:19:23,272 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 18:19:23,274 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 18:19:24,258 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 18:19:24,259 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 18:19:24,259 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 18:19:26,233 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 18:19:26,245 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 18:34:29,815 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 18:34:29,816 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 18:34:29,951 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 18:34:29,954 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 18:34:30,929 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 18:34:30,930 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 18:34:30,930 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 18:34:32,463 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 18:34:32,476 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 18:34:58,288 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 18:34:58,289 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 18:34:58,450 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 18:34:58,453 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 18:34:59,427 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 18:34:59,429 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 18:34:59,430 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 18:35:01,320 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 18:35:01,331 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 18:38:35,849 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 18:38:35,849 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 18:38:35,989 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 18:38:35,992 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 18:38:36,948 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 18:38:36,949 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 18:38:36,949 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 18:38:38,373 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 18:38:38,385 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:00:41,986 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:00:41,987 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:00:42,124 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:00:42,127 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:00:43,144 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:00:43,144 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:00:43,145 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:00:49,146 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:00:49,158 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:02:11,944 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:02:11,944 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:02:12,079 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:02:12,082 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:02:13,043 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:02:13,045 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:02:13,045 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:02:15,553 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:02:15,565 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:05:43,670 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:05:43,670 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:05:43,804 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:05:43,807 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:05:44,818 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:05:44,819 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:05:44,820 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:05:46,502 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:05:46,514 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:18:22,036 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:18:22,036 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:18:22,173 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:18:22,184 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:25:40,886 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:25:40,886 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:25:41,020 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:25:41,033 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:25:52,810 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:25:52,811 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:25:52,946 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:25:52,948 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:25:54,224 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:25:54,225 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:25:54,225 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:25:56,525 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:25:56,537 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:26:43,477 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:26:43,478 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:26:43,617 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:26:43,619 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:26:44,785 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:26:44,786 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:26:44,786 - INFO - 저장할 비행기 데이터가 없습니다.
+2025-02-03 19:26:47,038 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:26:47,050 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:27:02,774 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:27:02,775 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:27:02,912 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:27:02,923 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:27:53,835 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:27:53,836 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:27:53,976 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:27:53,987 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:28:46,535 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:28:46,536 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:28:46,675 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:28:46,677 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:28:47,996 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:28:47,997 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:28:47,997 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:28:50,138 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:28:50,150 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:30:26,142 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:30:26,142 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:30:26,278 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:30:26,280 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:30:27,338 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:30:27,339 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:30:27,339 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:30:28,483 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:30:28,496 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:32:49,144 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:32:49,146 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:32:49,285 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:32:49,288 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:32:50,541 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:32:50,542 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:32:50,542 - ERROR - 예상치 못한 에러: name 'Flights' is not defined
+2025-02-03 19:32:50,555 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:32:59,443 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:32:59,443 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:32:59,581 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:32:59,583 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:33:00,663 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:33:00,663 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:33:00,664 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:33:05,744 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:33:05,757 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:34:04,422 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:34:04,422 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:34:04,577 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:34:04,580 - DEBUG - Starting new HTTP connection (1): fr24api.flightradar24.com:80
+2025-02-03 19:34:04,664 - DEBUG - http://fr24api.flightradar24.com:80 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 301 167
+2025-02-03 19:34:04,666 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:34:05,728 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:34:05,728 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:34:05,729 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:34:06,976 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:34:06,988 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-03 19:35:05,649 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-03 19:35:05,649 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-03 19:35:05,783 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-03 19:35:05,786 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-03 19:35:06,382 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-03 19:35:06,382 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-03 19:35:06,383 - INFO - 비행기 데이터가 없습니다.
+2025-02-03 19:35:08,043 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-03 19:35:08,056 - INFO - 데이터베이스 연결이 종료되었습니다.
+2025-02-04 16:08:24,185 - DEBUG - DB_SERVER: localhost,1433, DB_NAME: TestDB, DB_USER: SA
+2025-02-04 16:08:24,186 - DEBUG - 연결 문자열: DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost,1433; DATABASE=TestDB; UID=SA; PWD=**********; Encrypt=no; TrustServerCertificate=yes; Connection Timeout=5;
+2025-02-04 16:08:24,342 - INFO - MSSQL에 성공적으로 연결되었습니다.
+2025-02-04 16:08:24,344 - DEBUG - Starting new HTTPS connection (1): fr24api.flightradar24.com:443
+2025-02-04 16:08:25,305 - DEBUG - https://fr24api.flightradar24.com:443 "GET /api/live/flight-positions/light?bounds=50.682%2C46.218%2C14.422%2C22.243 HTTP/1.1" 200 None
+2025-02-04 16:08:25,306 - INFO - API로부터 데이터를 성공적으로 가져왔습니다.
+2025-02-04 16:08:25,307 - INFO - 비행기 데이터가 없습니다.
+2025-02-04 16:08:27,620 - INFO - 사용자에 의해 스크립트가 중단되었습니다.
+2025-02-04 16:08:27,632 - INFO - 데이터베이스 연결이 종료되었습니다.
