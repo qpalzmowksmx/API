@@ -5,4 +5,5 @@ Docker
     cd /init~~에 .sql 로 create랑 init-multiple~~함
     SQLAchemy를 위해서 pip install 도 함
 
-    
+Docker-compose
+    뭔가 잘 안됨
