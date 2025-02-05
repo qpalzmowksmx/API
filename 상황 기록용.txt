@@ -7,3 +7,7 @@ Docker
 
 Docker-compose
     뭔가 잘 안됨
+DB
+    csv 로만 들어가는 문제
+    도커 풀.푸쉬 문제
+    백업_쿠버네티스 적용관련
