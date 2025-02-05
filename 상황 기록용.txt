@@ -5,4 +5,13 @@ Docker
     cd /init~~에 .sql 로 create랑 init-multiple~~함
     SQLAchemy를 위해서 pip install 도 함
 
+Docker-Compoese
+    뭔가 잘안됨
+
+MySQL
+    DB 관리
+        내가 API 로 받은 파일을 json 이 이상하게 들어가서 py로 CSV로 변환후 임포트 해야함
+        파일을 넣을때 각 줄별로 번호를 부여하고 싶음
+        도커-컴포즈로 파일을 만들어도 클라우드에서 도커 풀로 내 푸쉬 파일을 받아도 데이터전송 어떻게?
+
     
