@@ -1,0 +1,23 @@
+#vi deployment.yaml 
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: nginx-deployment
+
+spec:
+  replicas: 3
+  selector:
+    matchLables:
+      app: nginx
+  template:
+    metadata:
+      lables:
+        app: nginx
+    spec:
+      containers:
+      - name:
+        images: nginx-container
+        image: nginx
+        ports:
+        - containerPort: 80

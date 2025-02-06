@@ -1,0 +1,87 @@
+// 첫 번째 대괄호 내용만 추출하는 함수 추가
+void extract_first_bracket(const char* line, char* result, int max_size) {
+    if (line == NULL || result == NULL) return;
+    
+    result[0] = '\0';
+    const char* start = strchr(line, '[');
+    if (start == NULL) return;
+    
+    const char* end = strchr(start, ']');
+    if (end == NULL) return;
+    
+    int len = end - start - 1;
+    if (len >= max_size) len = max_size - 1;
+    
+    strncpy(result, start + 1, len);
+    result[len] = '\0';
+}
+
+// 모든 대괄호와 내용 제거하는 함수는 그대로 유지
+void remove_brackets(char *line) {
+    if (line == NULL) return;
+
+    char *result = (char*)malloc(strlen(line) + 1);
+    if (result == NULL) {
+        printf("메모리 할당 실패\n");
+        return;
+    }
+
+    int i = 0, j = 0;
+    int bracket_count = 0;
+    
+    while (line[i] != '\0') {
+        if (line[i] == '[') {
+            bracket_count++;
+            i++;
+            while (line[i] != ']' && line[i] != '\0') {
+                i++;
+            }
+            if (line[i] == ']') {
+                i++;
+            }
+        } else {
+            result[j++] = line[i++];
+        }
+    }
+    result[j] = '\0';
+
+    char *start = result;
+    while (*start && isspace(*start)) start++;
+    
+    if (*start != '\0') {
+        strcpy(line, start);
+    } else {
+        line[0] = '\0';
+    }
+    
+    free(result);
+}
+
+// main 함수에서 파일 처리 부분 수정
+    char prev_user[MAX_LINE] = "";
+    char current_user[MAX_LINE] = "";
+
+    // 결과 쓰기
+    for (int i = 0; i < line_count; i++) {
+        if (lines[i] == NULL) continue;
+
+        char original_line[MAX_LINE];
+        strcpy(original_line, lines[i]);  // 원본 라인 보관
+        
+        // 현재 사용자 정보 추출
+        extract_first_bracket(original_line, current_user, MAX_LINE);
+        
+        // 대괄호 제거
+        remove_brackets(lines[i]);
+
+        // 첫 번째 사용자 정보가 다를 때만 줄바꿈 추가
+        if (i > 0 && strcmp(current_user, prev_user) != 0) {
+            fprintf(output_file, "\n\n");
+        }
+        
+        fprintf(output_file, "%s ", lines[i]);
+        
+        // 현재 사용자 정보를 이전 사용자 정보로 저장
+        strcpy(prev_user, current_user);
+    }
+}

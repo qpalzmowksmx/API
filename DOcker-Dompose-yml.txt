@@ -1,0 +1,27 @@
+version: '3.8'  # 도커 컴포즈의 버전! 내 파일의 버전 아님!
+
+services:
+  db:
+    image: mysql:8.0.41  #각 사용하고 있는 버전, 설치를 latest 로 하면 latest로
+    container_name: apisql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: AKJ1passwd
+      # MYSQL_DATABASE: 여러개라 생략 
+      MYSQL_USER: ksj
+      MYSQL_PASSWORD: Aurora5
+    ports:
+      - "3306:3306" # 본인이 사용중인 포트 기입
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init-db/:/docker-entrypoint-initdb.d/
+      - ./my.cnf:/etc/my.cnf
+    networks:
+      -my_network
+
+networks::
+  myNetworks:
+
+volumes:
+  db_data:
+
